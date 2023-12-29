@@ -66,7 +66,7 @@ const ContactForm = () => {
       >
         <div className="flex justify-center mb-6">
           <Image
-            src="/images/logo.jpeg"
+            src="/images/LogoSoldier.png"
             alt="Logo"
             width={100}
             height={100}

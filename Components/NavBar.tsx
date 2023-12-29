@@ -11,7 +11,7 @@ const StickyNavbar = () => {
         <div className="flex justify-between items-center py-3 md:py-6">
           <div className="flex-shrink-0">
             <Image
-              src="/images/logo.jpeg"
+              src="/images/LogoSoldier.png"
               alt="Logo"
               width={50}
               height={50}
