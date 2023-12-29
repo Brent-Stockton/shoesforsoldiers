@@ -2,11 +2,11 @@
   "name": "shoes-soldiers-web",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://shoesforsoldiers.org",
   "scripts": {
-    "dev": "node server.js",
+    "dev": "next dev",
     "build": "next build",
-    "start": "NODE_ENV=production node server.js"
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
     "@sendgrid/mail": "^8.1.0",
@@ -21,7 +21,7 @@
     "sweetalert2": "^11.6.13"
   },
   "devDependencies": {
-    "@heroicons/react": "^2.1.1",
+    "@heroicons/react": "^1.0.6",
     "@types/dotenv": "^8.2.0",
     "@types/node": "^20",
     "@types/react": "^18",
