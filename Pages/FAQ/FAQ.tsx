@@ -53,7 +53,7 @@ const FAQComponent = () => {
           <div key={index} className="mb-4">
             <button
               onClick={() => handleSelectFAQ(index)}
-              className="rounded-lg flex justify-between items-center w-full px-4 py-2 text-left text-lg bg-white border border-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-300 text-black  hover:bg-gray-200 text-[11px] md:text-[14px] lg:text-[18px] font-bold lg:font-normal"
+              className="rounded-lg flex justify-between items-center w-full px-4 py-2 text-left text-lg bg-white border border-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-300 text-black  hover:bg-gray-200 text-[10.5px] md:text-[12px] lg:text-[18px] lg:font-normal font-bold"
             >
               {faq.question}
               <span
@@ -65,7 +65,7 @@ const FAQComponent = () => {
               </span>
             </button>
             {selectedFAQ === index && (
-              <div className="mt-2 p-4 bg-white border border-gray-200 rounded-md text-black text-[11px] md:text-[14px] lg:text-[18px]">
+              <div className="mt-2 p-4 bg-white border border-gray-200 rounded-md text-black text-[13px] md:text-[14px] lg:text-[18px]">
                 <p>{faq.answer}</p>
               </div>
             )}
