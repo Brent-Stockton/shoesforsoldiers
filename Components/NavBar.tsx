@@ -2,8 +2,6 @@
 import Image from "next/image";
 import { useState } from "react";
 
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-
 const StickyNavbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -17,7 +15,7 @@ const StickyNavbar = () => {
               alt="Logo"
               width={50}
               height={50}
-              className="rounded-full w-12 h-12 md:w-16 md:h-16" // Tailwind classes for responsive sizing
+              className="rounded-full w-12 h-12 md:w-16 md:h-16"
             />
           </div>
 
@@ -28,9 +26,19 @@ const StickyNavbar = () => {
               className="text-gray-800 hover:text-gray-600"
             >
               {isMenuOpen ? (
-                <XMarkIcon className="h-8 w-8" />
+                <Image
+                  src="/images/close.png"
+                  alt="Close Icon"
+                  width={26}
+                  height={26}
+                />
               ) : (
-                <Bars3Icon className="h-8 w-8" />
+                <Image
+                  src="/images/hamburger.png"
+                  alt="Hamburger Icon"
+                  width={26}
+                  height={26}
+                />
               )}
             </button>
           </div>
