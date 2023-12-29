@@ -8,6 +8,7 @@ import Footer from "@/Pages/Footer/Footer";
 import Gallery from "@/Pages/Gallery.tsx";
 import Hero from "@/Pages/Hero.tsx";
 import StickyNavbar from "@/Components/NavBar";
+import "../styles/global.css";
 
 const App = () => {
   <Head>
