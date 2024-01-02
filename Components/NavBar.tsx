@@ -47,7 +47,7 @@ const StickyNavbar = () => {
           <div
             className={`${
               isMenuOpen ? "flex" : "hidden"
-            } flex-col md:flex-row md:flex space-x-0 md:space-x-9 text-red-900 font-army text-lg md:text-[30px] absolute md:relative top-16 md:top-0 left-0 w-full md:bg-transparent p-6 md:p-0 md:items-center md:w-auto  bg-gradient-to-r from-white to-gray-100`}
+            } flex-col md:flex-row md:flex space-x-0 md:space-x-9 text-red-900 font-army text-[25px] md:text-[30px] absolute md:relative top-16 md:top-0 left-0 w-full md:bg-transparent p-6 md:p-0 md:items-center md:w-auto  bg-gradient-to-r from-white to-gray-100`}
           >
             <a
               href="#hero"
