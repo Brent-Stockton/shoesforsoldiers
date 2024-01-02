@@ -32,8 +32,6 @@ export default function RootLayout({
           content="Empowering Our Soldiers, One Step at a Time - Join Us in Making a Difference Through Every Home Loan Closed."
         />
         <meta property="og:image" content="Your Image URL" />
-
-        <link rel="icon" href="/images/logo.jpeg" />
         <link rel="icon" href="/images/logo.ico" />
       </Head>
       <body className={inter.className}>{children}</body>
