@@ -9,7 +9,7 @@ const CTA = () => {
           layout="fill"
           objectFit="cover"
           src="/images/flag2.webp"
-          className="opacity-50"
+          className="opacity-20"
         />
       </div>
       <div className="relative z-10 flex flex-col justify-center items-center max-w-4xl mx-auto p-3">
@@ -29,7 +29,7 @@ const CTA = () => {
         <p className="rounded w-full md:w-3/5">
           Zelle donations can be made directly to{" "}
           <a href="mailto:shoesforsoldiers@gmail.com" className="text-blue-600">
-            shoesforsoldiers@gmail.com
+            shoes4soldiers@gmail.com
           </a>
         </p>
       </div>
