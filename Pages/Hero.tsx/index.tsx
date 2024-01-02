@@ -54,7 +54,7 @@ const Hero = () => {
             </div>
             <p className="font-primary text-white text-center text-[16px] px-4 md:px-0 md:text-[18px] max-w-[500px]">
               Empowering Our Soldiers, One Step at a Time - Join Us in Making a
-              Difference Through Every Home Loan Closed.
+              Difference With Each Shoe Donated.
             </p>
             <a
               href="#CTA"

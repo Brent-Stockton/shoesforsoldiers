@@ -13,7 +13,7 @@ const faqs: FAQ[] = [
       "We specifically utilize Brooks Shoes to emphasize the importance of foot care during physical training. As an Army veteran, I understand the value of uniformity and appropriate footwear.",
   },
   {
-    question: "Does the military not provide shoes?",
+    question: "Doesn't the military supply footwear?",
     answer:
       "Shoe provision varies by military branch. Some provide them, while others don't. Regardless, we aim to educate soldiers about the necessity of proper running shoes, which may not always be provided.",
   },
@@ -21,6 +21,11 @@ const faqs: FAQ[] = [
     question: "Can our soldiers not afford these shoes?",
     answer:
       "While soldiers are compensated, there's a need for awareness about investing in proper footwear. Without this knowledge, they might not prioritize the right shoes for their physical well-being.",
+  },
+  {
+    question: "Can we ship overseas?",
+    answer:
+      "We have the capability to facilitate international shipping to various global destinations, including overseas military bases.",
   },
 ];
 
@@ -53,7 +58,7 @@ const FAQComponent = () => {
           <div key={index} className="mb-4">
             <button
               onClick={() => handleSelectFAQ(index)}
-              className="rounded-lg flex justify-between items-center w-full px-4 py-2 text-left text-lg bg-white border border-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-300 text-black  hover:bg-gray-200 text-[10.5px] md:text-[12px] lg:text-[18px] lg:font-normal font-bold"
+              className="rounded-lg flex justify-between items-center w-full px-4 py-2 text-left text-lg bg-white border border-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-300 text-black  hover:bg-gray-200 text-sm md:text-[12px] lg:text-[18px] lg:font-normal"
             >
               {faq.question}
               <span
@@ -65,7 +70,7 @@ const FAQComponent = () => {
               </span>
             </button>
             {selectedFAQ === index && (
-              <div className="mt-2 p-4 bg-white border border-gray-200 rounded-md text-black text-[13px] md:text-[14px] lg:text-[18px]">
+              <div className="mt-2 p-4 bg-white border border-gray-200 rounded-md text-black text-sm md:text-[14px] lg:text-[18px]">
                 <p>{faq.answer}</p>
               </div>
             )}
