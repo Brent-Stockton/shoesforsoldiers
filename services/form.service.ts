@@ -2,12 +2,11 @@ import axios from "axios";
 
 export const sendEmail = async (data: any) => {
   try {
-    const submitted = await axios.post("/api/sendEmail", {
+    const submitted = await axios.post("/api/sendgrid", {
       name: data.name,
-      emailFrom: data.email,
-      emailTo: data.partnerEmail,
+      email: data.email,
+      phoneNumber: data.phoneNumber,
       message: data.message,
-      phone: data.phoneNumber,
     });
     return submitted.data;
   } catch (err: any) {

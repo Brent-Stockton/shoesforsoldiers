@@ -37,8 +37,7 @@ const ContactForm = () => {
 
       Swal.fire({
         icon: "success",
-        title:
-          "Thanks for the submission.<br />You'll be hearing from us soon.",
+        title: "Thanks for the submission. You'll be hearing from us soon.",
       });
     } catch (err: any) {
       Swal.fire({
