@@ -62,10 +62,10 @@ const StickyNavbar = () => {
               About Us
             </a>
             <a
-              href="#CTA"
+              href="#media"
               className="block py-2 md:py-0 md:inline hover:text-gray-900 transition duration-300 hover:scale-105 md:hover:scale-110"
             >
-              Donate
+              Media
             </a>
             <a
               href="#gallery"
@@ -80,10 +80,16 @@ const StickyNavbar = () => {
               FAQ
             </a>
             <a
+              href="#CTA"
+              className="block py-2 md:py-0 md:inline hover:text-gray-900 transition duration-300 hover:scale-105 md:hover:scale-110"
+            >
+              Donate
+            </a>
+            <a
               href="#contact"
               className="block py-2 md:py-0 md:inline hover:text-gray-900 transition duration-300 hover:scale-105 md:hover:scale-110"
             >
-              Contact Us
+              Nominate a Soldier
             </a>
           </div>
         </div>

@@ -33,7 +33,12 @@ const ContactForm = () => {
     setLoading(true);
 
     try {
-      await sendEmail(data);
+      // Send only name, email, and message to EmailJS
+      await sendEmail({
+        name: data.name,
+        email: data.email,
+        message: data.message,
+      });
 
       Swal.fire({
         icon: "success",
@@ -94,26 +99,6 @@ const ContactForm = () => {
 
         <div className="mb-4">
           <label
-            htmlFor="phoneNumber"
-            className="block text-white text-sm font-bold mb-2"
-          >
-            Phone Number
-          </label>
-          <input
-            id="phoneNumber"
-            {...register("phoneNumber", { required: true })}
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-            type="tel"
-          />
-          {errors.phoneNumber && (
-            <span className="text-red-500 text-xs italic">
-              Phone number is required.
-            </span>
-          )}
-        </div>
-
-        <div className="mb-4">
-          <label
             htmlFor="email"
             className="block text-white text-sm font-bold mb-2"
           >
@@ -157,7 +142,7 @@ const ContactForm = () => {
             className="bg-black hover:bg-white text-white hover:text-black text-[20px] tracking-wider px-8 py-4 font-bold font-army rounded shadow-lg hover:scale-105 transition-transform mx-auto"
             type="submit"
           >
-            Send Message
+            Nominate a Soldier
           </button>
         </div>
       </form>

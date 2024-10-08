@@ -7,6 +7,7 @@ import FAQ from "@/Pages/FAQ/FAQ";
 import Footer from "@/Pages/Footer/Footer";
 import Gallery from "@/Pages/Gallery.tsx";
 import Hero from "@/Pages/Hero.tsx";
+import MediaPage from "@/Pages/Media/MediaPage";
 import StickyNavbar from "@/Components/NavBar";
 
 const App = () => {
@@ -37,14 +38,17 @@ const App = () => {
       <section id="about">
         <CallToAction />
       </section>
-      <section id="CTA">
-        <CTA />
+      <section id="media">
+        <MediaPage />
       </section>
       <section id="gallery">
         <Gallery />
       </section>
       <section id="faq">
         <FAQ />
+      </section>
+      <section id="CTA">
+        <CTA />
       </section>
       <section id="faq">
         <ContactForm />
