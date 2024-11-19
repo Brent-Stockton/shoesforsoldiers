@@ -21,7 +21,7 @@ const CTA = () => {
           to step up and support them. A good pair of running shoes can make a
           significant difference in a soldier's life...
         </p>
-        <a href="https://www.paypal.com/paypalme/shoesforsoldiers?locale.x=en_US">
+        <a href="https://www.zeffy.com/donation-form/donate-to-make-a-difference-489">
           <button className="text-[18px] sm:text-[20px] tracking-wider px-6 py-3 md:px-12 md:py-6 bg-red-900 text-white font-bold font-army rounded hover:bg-black shadow-lg hover:scale-105 transition-transform duration-300 mb-4">
             Donate Now
           </button>
