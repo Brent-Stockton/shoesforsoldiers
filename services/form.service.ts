@@ -5,16 +5,22 @@ export const sendEmail = async (data: {
   email: string;
   message: string;
 }) => {
-  const serviceID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
-  const templateID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
-  const userID = process.env.NEXT_PUBLIC_EMAILJS_USER_ID;
+  const serviceID = "service_d9yq35b";
+  const templateID = "template_hvg0rpq";
+  const userID = "4noXVBrUk5ALs0qDI";
+
+  console.log(
+    process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+    process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+    process.env.NEXT_PUBLIC_EMAILJS_USER_ID
+  );
 
   if (!serviceID || !templateID || !userID) {
     throw new Error("EmailJS service not properly configured.");
   }
 
   const templateParams = {
-    to_name: "Davis Realty Team",
+    to_name: "Shoes For Soldiers",
     from_name: data.name,
     from_email: data.email,
     message: data.message,
